@@ -1,8 +1,6 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-import Conditions from './components/conditions.vue'
-import Components_lesson from './components/components_lesson/ComponentsLesson.vue'
+import router from './router'
 </script>
 
 <template>
@@ -18,12 +16,24 @@ import Components_lesson from './components/components_lesson/ComponentsLesson.v
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
+    <nav class="nav">
+      <router-link to="/">
+        <p>Home</p>
+      </router-link>
+      <router-link to="/conditions">
+        <p>Conditions</p>
+      </router-link>
+      <router-link to="/components_lesson">
+        <p>Components</p>
+      </router-link>
+      <router-link to="/props_lesson">
+        <p>Props</p>
+      </router-link>
+    </nav>
   </header>
-
   <main>
+    <router-view></router-view>
     <!-- <TheWelcome /> -->
-    <Conditions />
-    <Components_lesson />
   </main>
 </template>
 
@@ -37,6 +47,15 @@ header {
   margin: 0 auto 2rem;
 }
 
+.nav {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 1.5rem auto;
+}
+.nav p {
+  font-size: 1.5rem;
+}
 @media (min-width: 1024px) {
   header {
     display: flex;

@@ -1,14 +1,8 @@
 import './assets/main.css'
-
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
-createApp(App).mount('#app')
+const app = createApp(App)
 
-import Conditions from '../src/components/conditions.vue'
-export default {
-  name: 'App',
-  components: {
-    Conditions,
-  },
-}
+app.use(router).mount('#app')
