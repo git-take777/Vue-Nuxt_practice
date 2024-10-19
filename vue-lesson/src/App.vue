@@ -2,6 +2,7 @@
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
 import Conditions from './components/conditions.vue'
+import Components_lesson from './components/components_lesson/ComponentsLesson.vue'
 </script>
 
 <template>
@@ -22,6 +23,7 @@ import Conditions from './components/conditions.vue'
   <main>
     <!-- <TheWelcome /> -->
     <Conditions />
+    <Components_lesson />
   </main>
 </template>
 
