@@ -5,6 +5,7 @@ import Components_lesson from '../components/components_lesson/ComponentsLesson.
 import PropsLesson from '@/components/props_lesson/PropsLesson.vue'
 import InternalStructureLesson from '../components/internal_structure_lesson/InternalStructure.vue'
 import ComponentHighLevel from '@/components/component-highlevel_lesson/ComponentHighLevel.vue'
+import Form from '@/components/from_lesson/Form.vue'
 const routes = [
   { path: '/', component: TheWelcome },
   { path: '/conditions', component: Conditions },
@@ -20,6 +21,10 @@ const routes = [
   {
     path: '/components_highlevel_lesson',
     component: ComponentHighLevel,
+  },
+  {
+    path: '/form_lesson',
+    component: Form,
   },
 ]
 

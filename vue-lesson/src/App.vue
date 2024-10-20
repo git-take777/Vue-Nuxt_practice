@@ -35,6 +35,9 @@ import router from './router'
       <router-link to="/components_highlevel_lesson">
         <p>ComponentsHighLevel</p>
       </router-link>
+      <router-link to="/form_lesson">
+        <p>Form</p>
+      </router-link>
     </nav>
   </header>
   <main>
