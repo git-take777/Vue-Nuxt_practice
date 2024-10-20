@@ -32,6 +32,9 @@ import router from './router'
       <router-link to="/internal_structure_lesson">
         <p>InternalStructure</p>
       </router-link>
+      <router-link to="/components_highlevel_lesson">
+        <p>ComponentsHighLevel</p>
+      </router-link>
     </nav>
   </header>
   <main>
