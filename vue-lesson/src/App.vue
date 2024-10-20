@@ -29,6 +29,9 @@ import router from './router'
       <router-link to="/props_lesson">
         <p>Props</p>
       </router-link>
+      <router-link to="/internal_structure_lesson">
+        <p>InternalStructure</p>
+      </router-link>
     </nav>
   </header>
   <main>
